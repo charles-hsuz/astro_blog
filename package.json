@@ -2,14 +2,23 @@
 	"name": "astro-blog",
 	"type": "module",
 	"version": "0.0.1",
+	"license": "MIT",
 	"scripts": {
 		"dev": "astro dev",
 		"start": "astro dev",
 		"build": "astro build",
+		"hsu dev": "astro dev",
+		"hsu build": "astro build",
 		"preview": "astro preview",
-		"astro": "astro"
+		"astro": "astro",
+		"hsu": "node ./src/_bin/hsu.js"
 	},
 	"dependencies": {
-		"astro": "^2.0.14"
+		"@astrojs/vue": "^2.0.1",
+		"astro": "^2.0.4",
+		"vue": "^3.2.30"
+	},
+	"devDependencies": {
+		"stylus": "^0.59.0"
 	}
 }
