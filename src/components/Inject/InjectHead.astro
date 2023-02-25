@@ -1,0 +1,9 @@
+---
+import { configs } from "@s/config";
+let injects = '';
+if(configs.inject.head != '') configs.inject.head.map((item: string) => {
+  injects += item;
+})
+---
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'">
+<Fragment set:html={injects}/>

@@ -1,0 +1,14 @@
+:root
+  --font-black: black
+  --theme-color: #49b1f5
+  --theme-bg: rgb(252 254 255)
+  --theme-card-bg: linear-gradient(to bottom right, #fff, rgba(255,255,255,0.7))
+
+
+@keyframes appear 
+  0%
+    transform: translateY(-5px)
+    opacity: 0f
+  100%
+    transform: translateY(0)
+    opacity: 1

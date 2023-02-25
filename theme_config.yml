@@ -1,0 +1,32 @@
+site:
+  name: 枢衡の巢
+  icon: 'https://picbed-1304952903.cos.ap-beijing.myqcloud.com/pic/blog202302030251122.png'
+  
+title:
+  normal: 枢衡の巢
+  focusless: (つェ⊂)我藏好了哦~
+  delay: 300
+
+menu:
+  首页: / || fas fa-home
+  文章||fas fa-archive:
+    时间轴: /archives/ || fa-solid fa-clock
+    标签: /tags/ || fas fa-tags
+    分类: /categories/ || fas fa-folder-open
+  清单||fa fa-heartbeat:
+    个人动态: /bb/ || fa-solid fa-compass
+    小工具: /tools/ || fa-solid fa-toolbox
+  我的||fa-solid fa-user:
+    友链: /link/ || fas fa-link
+    关于: /about/ || fas fa-heart
+
+nav:
+  logo: https://picbed-1304952903.cos.ap-beijing.myqcloud.com/pic/blog202302030251122.png
+  display_title: true
+  fixed: true # fixed navigation bar
+
+inject:
+  head:
+    - 
+  body:
+    -

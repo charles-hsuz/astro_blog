@@ -1,0 +1,27 @@
+---
+import { configs } from "@s/config";
+let injects = '';
+if(configs.inject.body != '') configs.inject.body.map((item: string) => {
+  injects += item;
+})
+let titlejs = `
+<script>
+  var old_title = document.title;
+var time_count;
+document.addEventListener('visibilitychange', function() {
+    if (document.hidden) {
+        time_count = setTimeout(function(){
+            document.title = '` + configs.title.focusless.trim() + `';
+        },`+ (configs.title.delay || '0') +`);
+    }
+    else {
+        clearTimeout(time_count);
+        document.title = old_title;
+    }
+});
+</script>
+`
+---
+
+<Fragment set:html={titlejs}/>
+<Fragment set:html={injects}/>

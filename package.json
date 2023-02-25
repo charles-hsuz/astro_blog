@@ -15,10 +15,12 @@
 	},
 	"dependencies": {
 		"@astrojs/vue": "^2.0.1",
-		"astro": "^2.0.4",
+		"astro": "^2.0.6",
+		"js-yaml": "^4.1.0",
 		"vue": "^3.2.30"
 	},
 	"devDependencies": {
+		"@types/node": "^18.14.0",
 		"stylus": "^0.59.0"
 	}
 }
