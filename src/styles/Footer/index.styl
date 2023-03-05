@@ -1,0 +1,79 @@
+#footer
+  position: relative
+  padding-top: 15px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%,rgba(255, 255, 255, 0.4) 18%, #ffffff 97%);
+  #footer-buttons
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    margin: 0;
+    padding: 2rem 0 0 0;
+    .buttons
+      display: grid;
+      width: 45%;
+      padding: 0;
+      justify-items: center;
+      align-items: center;
+      grid-template-columns: repeat(5,1fr);
+      .icon
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        border-radius: 50%;
+        padding: 5px;
+        margin: 0px;
+        width: 40px;
+        height: 40px;
+        box-shadow: 1px 10px 10px 1px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        &:not(:hover)
+          background: rgba(255, 255, 255, 0.4);
+          i
+            color: #333
+        &:hover .bubble
+          top: 20px;
+          opacity: 1;
+          visibility: visible;
+          pointer-events: auto;
+      .bubble
+        position: absolute;
+        top: 5px;
+        font-size: 14px;
+        color: #ffffff;
+        padding: 5px 8px;
+        border-radius: 5px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      a
+        display: flex;
+        height: 28px;
+        width: 26px;
+        font-size: 18px;
+        line-height: 35px;
+        color: #4c4948;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        i
+          color: white
+          &:before
+            font-size: 1.8rem
+            display: inline-block
+
+  #foot
+    background-color: rgba(255, 255, 255, 0.4);
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    column-gap: 15px;
+    margin: 1%;
+    margin-top: 30px;
+    padding-bottom: 15px;
+    max-width: 1170px;
+    box-shadow: 9px 10px 16px 3px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+  #foot-badges
+    max-width: 1170px;
+    margin: auto;

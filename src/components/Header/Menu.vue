@@ -1,9 +1,6 @@
 <script setup lang='ts'>
-import { Ref } from 'vue'
-import { reactive } from 'vue'
 import { computed } from '@vue/reactivity';
 import { configs } from '@s/config';
-import { timerMessage } from 'astro/dist/core/logger/core';
 
 let res = computed(() => {
   let items = ''

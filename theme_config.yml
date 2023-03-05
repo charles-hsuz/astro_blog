@@ -30,3 +30,11 @@ inject:
     - 
   body:
     -
+
+footer:
+  buttons:
+    Email||fa-solid fa-envelope||blue: "mailto:charles_hsu@qq.com"
+    QQ||fa-brands fa-qq||light-blue: "tencent://Message/?Uin=1191393280&websiteName=q-zone.qq.com&Menu=yes"
+    top||fa-solid fa-angle-up||gray: "#"
+    github||fab fa-github||black: "https://github.com/charles-hsuz"
+    CSDN||fa-solid fa-copyright||red: "https://blog.csdn.net/CharlesHsuu?type=blog"

@@ -1,3 +1,51 @@
 body
   margin: 0
   padding: 0
+#body-wrap
+  background: var(--theme-bg)
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+
+.gray
+  color: #6B7280
+.red
+  color: #CD201F
+.yellow
+  color: #F59E0B
+.green
+  color: #10B981
+.blue
+  color: #3B82F6
+.indigo
+  color: #6366F1
+.purple
+  color: #8B5CF6
+.pink
+  color: #EC4899
+.black
+  color: #333
+.light-blue
+  color: #1DA1F2
+
+
+.bg-gray
+  background-color: #6B7280
+.bg-red
+  background-color: #CD201F
+.bg-yellow
+  background-color: #F59E0B
+.bg-green
+  background-color: #10B981
+.bg-blue
+  background-color: #3B82F6
+.bg-indigo
+  background-color: #6366F1
+.bg-purple
+  background-color: #8B5CF6
+.bg-pink
+  background-color: #EC4899
+.bg-black
+  background-color: #333
+.bg-light-blue
+  background-color: #1DA1F2
