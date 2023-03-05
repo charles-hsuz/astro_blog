@@ -1,13 +1,18 @@
 ---
   import "../../styles/Footer/index.styl"
-  import { configs } from "@s/config";
+  import { configs } from "@s/config"
   import Buttons from "./button.vue"
+  import Menus from "./menus.vue";
 ---
 
 <footer id="footer">
   <div id="footer-buttons">
     <Buttons></Buttons>
   </div>
-  <div id="foot"></div>
-  <div id="foot-badges"></div>
+  <div id="foot">
+    <Menus />
+  </div>
+  <div id="footer-banner">
+    <div class="foot-badges"></div>
+  </div>
 </footer>

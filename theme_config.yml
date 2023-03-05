@@ -38,3 +38,25 @@ footer:
     top||fa-solid fa-angle-up||gray: "#"
     github||fab fa-github||black: "https://github.com/charles-hsuz"
     CSDN||fa-solid fa-copyright||red: "https://blog.csdn.net/CharlesHsuu?type=blog"
+  menu:
+    直达:
+      - 我的主页||/
+      - 个人动态||/bb
+      - 随机文章||/random/index.html
+    分类:
+      - 学习笔记||/catogories/学习笔记/
+      - 算法教程||/catogories/算法教程/
+      - 刷题笔记||/catogories/刷题笔记/
+      - 语法教程||/catogories/语法教程/
+      - 工具分享||/catogories/工具分享/
+    关于:
+      - 关于我||/about
+      - 博客统计||/chart
+      - 文章归档||/archives
+    友链:
+      - 在这里||/link
+      - 广告位招租||mailto:charles_hsu@qq.com
+    协议:
+      - 隐私协议||/privacy
+      - Cookie||/cookie
+      - 版权协议||/cc
