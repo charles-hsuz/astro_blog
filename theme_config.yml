@@ -1,6 +1,13 @@
 site:
   name: 枢衡の巢
   icon: 'https://picbed-1304952903.cos.ap-beijing.myqcloud.com/pic/blog202302030251122.png'
+  greet: 你好，我是枢衡！
+  description: 一只小乌鸦的学习日记~
+  socialLinks: 
+    github||fab fa-github: https://github.com/charles-hsuz
+    Email||fas fa-envelope: mailto:charles_hsu@qq.com
+    PWA||fas fa-puzzle-piece: 'javascript:void(0);'
+  followMe: https://github.com/charles-hsuz
   
 title:
   normal: 枢衡の巢
@@ -30,6 +37,16 @@ inject:
     - 
   body:
     -
+
+sidebar:
+  position: left
+  cards:
+    author: true
+    articles: true
+    categories: true
+    tags: true
+    archives: true
+    webinfo: true
 
 footer:
   buttons:
