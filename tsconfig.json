@@ -8,7 +8,8 @@
       "@ass/*": ["assets/*"],
       "@lay/*": ["layouts/*"],
       "@sty/*": ["styles/*"],
-      "@s/*": ["*"]
+      "@s/*": ["*"],
+      "@uti/*": ["bin/utils/*"]
     }
   }
 }

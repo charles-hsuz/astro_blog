@@ -1,24 +1,15 @@
 ---
 import "@sty/Main/index.styl"
-import { configs } from "@s/config"
-import Author from "./author.vue";
+import { configs, sidebar } from "@s/config"
+import Author from "./author.vue"
+import List from "./list.vue"
 const position:string = configs.sidebar.position
-interface cardsT{
-  author: boolean,
-  articles: boolean,
-  categories: boolean,
-  tags: boolean,
-  archives: boolean,
-  webinfo: boolean
-}
-const cards:cardsT = configs.sidebar.cards
+const cards:sidebar = configs.sidebar.cards
 ---
 
 <main>
   <div id="sidebar" class={position}>
     {cards.author && <Author />}
   </div>
-  <div id="post-list">
-
-  </div>
+  <List />
 </main>

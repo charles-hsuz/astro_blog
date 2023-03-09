@@ -11,12 +11,13 @@
 		"hsu build": "astro build",
 		"preview": "astro preview",
 		"astro": "astro",
-		"hsu": "node ./src/_bin/hsu.js"
+		"hsu": "node ./src/bin/hsu.js"
 	},
 	"dependencies": {
 		"@astrojs/vue": "^2.0.1",
-		"astro": "^2.0.6",
+		"astro": "^2.0.18",
 		"js-yaml": "^4.1.0",
+		"remark-directive": "^2.0.1",
 		"vue": "^3.2.30"
 	},
 	"devDependencies": {

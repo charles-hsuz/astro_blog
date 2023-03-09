@@ -8,11 +8,17 @@ site:
     Email||fas fa-envelope: mailto:charles_hsu@qq.com
     PWA||fas fa-puzzle-piece: 'javascript:void(0);'
   followMe: https://github.com/charles-hsuz
+  copyRight: ©2020 - 2023 By 枢衡_Krahsu
+  ICP: 京ICP备2023004014号
   
 title:
   normal: 枢衡の巢
   focusless: (つェ⊂)我藏好了哦~
   delay: 300
+
+posts:
+  cover: 'https://picbed-1304952903.cos.ap-beijing.myqcloud.com/pic/blog202302091657180.png'
+  highlight: dracula
 
 menu:
   首页: / || fas fa-home
@@ -77,3 +83,4 @@ footer:
       - 隐私协议||/privacy
       - Cookie||/cookie
       - 版权协议||/cc
+

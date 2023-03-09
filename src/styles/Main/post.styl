@@ -1,0 +1,29 @@
+main
+  #post-list
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-column-gap: 15px
+    .post-card
+      simpleCard()
+      margin-bottom: 15px
+      .top-img
+        display: flex;
+        justify-content: center;
+        img
+          height: 213px
+      .post-title
+          margin: 10px 15px
+        a
+          text-decoration: none
+          color: var(--font-black)
+      .post-label
+        font-size: 14px
+        display: block
+        color: var(--font-gray)
+        margin: 5px 15px
+        i
+          padding: 4px
+          border-radius: 4px
+          transition: .3s
+        i:hover
+          background-color: #ddd

@@ -7,6 +7,9 @@ import cp from "child_process"
 import { stderr } from "process"
 import { captureRejectionSymbol } from "events"
 
+
+
+
 const [_1, _2, command, ...args] = process.argv
 
 switch (command) {

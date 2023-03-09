@@ -2,3 +2,14 @@ simpleCard()
   background-color: var(--theme-card-pure-bg)
   border-radius: 10px;
   box-shadow:  8px 8px 12px #d0d0d0, -8px -8px 12px #ffffff;
+  transition: box-shadow .3s
+  &:hover
+    box-shadow: 8px 8px 12px #c0c0c0, -8px -8px 12px #efefef;
+simpleCardPressed()
+  border-radius: 10px;
+  background-color: var(--theme-card-pure-bg)
+  box-shadow: inset 8px 8px 12px #d0d0d0, inset -8px -8px 12px #f0f0f0;
+simpleCardConcave()
+  border-radius: 10px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow:  8px 8px 12px #d0d0d0, -8px -8px 12px #f0f0f0;

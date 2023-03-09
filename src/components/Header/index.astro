@@ -10,3 +10,15 @@
     <Menu></Menu>
   </nav>
 </header>
+
+<script>
+  window.addEventListener('scroll', function() {
+    if (window.pageYOffset === 0) {
+      const nav = document.querySelector("#header #nav")
+      nav.classList.remove('scroll');
+    } else {
+      const nav = document.querySelector("#header #nav")
+      nav.classList.add('scroll');
+    }
+  });
+</script>
