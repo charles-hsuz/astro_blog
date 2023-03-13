@@ -1,0 +1,30 @@
+#post-container
+  .article
+    padding: 15px
+    simpleCard()
+    h1,h2,h3,h4,h5,h6
+      width: fit-content
+      padding-left: 0px
+      transition: .3s
+      &:before
+        font-family: "Font Awesome 6 Free";
+        content: "\f0c1"
+        margin-right: 10px
+        color: black
+        transition: .3s
+      &:hover
+        padding-left: 15px
+      &:hover::before
+        color: var(--theme-color)
+    h1
+      font-size: 3.3rem
+    h2
+      font-size: 2.7rem       
+    h3
+      font-size: 2.1rem
+    h4
+      font-size: 1.5rem
+    img
+      display: block
+      max-width: calc(100% - 30px)
+      margin: 0 auto

@@ -1,0 +1,41 @@
+---
+import '@sty/postlist/index.styl'
+const { currentPage, maxPage } = Astro.props
+const pages = new Array(maxPage + 1).fill(false)
+pages[1] 
+  = pages[maxPage]
+  = pages[currentPage]
+  = pages[currentPage - 1]
+  = pages[Math.min(currentPage + 1, maxPage)]
+  = true
+console.log(pages)
+---
+
+<footer id="post-list-footer">
+  <a href={`/${Math.max(currentPage - 1, 1)}`} class={"pageDown button " + (currentPage === 1 ? 'hide' : '')}>
+    <span>
+      <i class="fas fa-chevron-left fa-fw"></i>
+    </span>
+  </a>
+  
+  {
+    pages.map((element, index) => {
+      if(element && index) {return (
+          <a href={`/${index}`} class={"button " + (index === currentPage ? 'currentPage' : '')}>
+            <span>{index}</span>
+          </a>
+      )} else if(pages[index - 1]) {
+        return (
+          <a class="button space">
+            <span>...</span>
+          </a>
+        )
+      }
+    })
+  }
+  <a href={`/${Math.min(currentPage + 1, maxPage)}`} class={"pageUp button " + (currentPage === maxPage ? 'hide' : '')}>
+    <span>
+      <i class="fas fa-chevron-right fa-fw"></i>
+    </span>
+  </a>
+</footer>

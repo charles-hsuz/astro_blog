@@ -1,7 +1,7 @@
 ---
 import { configs } from "@s/config"
 import { getCollection, CollectionEntry } from "astro:content"
-import Default from "@lay/Default.astro"
+import PostPage from '@lay/PostPage.astro'
 
 const baseUrl = '/posts/'
 
@@ -21,8 +21,6 @@ const {Content, headings} = await entry.render()
 
 ---
 
-<Default>
-  <div class="article">
-    <Content /> 
-  </div>
-</Default>
+<PostPage>
+  <Content />
+</PostPage>

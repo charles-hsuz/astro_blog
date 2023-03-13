@@ -22,6 +22,8 @@ butterfly 版本 4.6.1
 不保证低版本可用，魔改前请备份
 :::
 
+::bili[testbilibili]{#BV11j411G7fF}
+
 ## 展示
 ![](https://picbed-1304952903.cos.ap-beijing.myqcloud.com/pic/blog202302091515168.gif)
 

@@ -1,6 +1,6 @@
 import { defineConfig } from 'astro/config';
 import { configs } from "./src/config"
-import { remarkNotePlugin } from './src/utils/remarkPlugins/note.js'
+import { remarkCustomPlugin } from './src/utils/remarkPlugins/directive.js'
 import remarkGfm from 'remark-gfm'
 import smartypants from 'remark-smartypants'
 import remarkDirective from 'remark-directive';
@@ -17,6 +17,6 @@ export default defineConfig({
       langs: [],
       wrap: true
     },
-    remarkPlugins: [[remarkGfm, {}],[smartypants, {}],[remarkDirective, {}], [remarkNotePlugin, {}]],
+    remarkPlugins: [[remarkGfm, {}],[smartypants, {}],[remarkDirective, {}], [remarkCustomPlugin, {}]],
   },
 });

@@ -1,0 +1,65 @@
+---
+import Default from "@lay/Default.astro"
+import Header from "@com/Header/index.astro"
+import Footer from "@com/Footer/index.astro"
+import Main from "@com/Home/main.astro"
+import Buttons from '@com/postlist/buttons.astro'
+import { getCollection } from "astro:content";
+import { SortCollectArticles } from "@s/utils/SortArticles";
+import { configs } from "@s/config";
+import { TimeFormat } from "@uti/ParseTime";
+const PageSize = configs.posts.paginationSize
+
+export async function getStaticPaths({ paginate }: any) {
+  const res = SortCollectArticles<"posts">(
+    await getCollection("posts", ({ data }) => data.draft !== true)
+  );
+  return paginate(res, { pageSize: configs.posts.paginationSize });
+}
+const res = SortCollectArticles<"posts">(
+  await getCollection("posts", ({ data }) => data.draft !== true)
+);
+
+const { page } = Astro.props,
+  { page: RoutePage } = Astro.params,
+  paramsCurrentPage = parseInt(RoutePage!) ? parseInt(RoutePage!) : 1;
+
+const FinalList = res.slice(
+  (paramsCurrentPage - 1) * PageSize,
+  paramsCurrentPage * PageSize
+);
+
+const baseUrl = '/posts/'
+---
+<Default>
+  <div id="body-wrap">
+    <Header />
+    <Main>
+      <section id="post-list">
+        <section id="article-list">{
+            FinalList.map(data =>{
+              return (
+                <article class="post-card">
+                  <a href={baseUrl + data.slug}>
+                    <div class="top-img">
+                      <img src={data.data.cover || configs.posts.cover} alt="">
+                    </div>
+                    <div class="post-info">
+                      <h2 class="post-title">{data.data.title}</h2>
+                    </div>
+                  </a>
+                  <span class="post-label">
+                    <a class="label-link" href="javascript:void(0);">
+                      <i class="far fa-calendar-alt">{' 发表于' + TimeFormat(data.data.updated || data.data.date)}</i>
+                    </a>
+                  </span>
+                </article>
+              )
+            })}
+        </section>
+        <Buttons currentPage={paramsCurrentPage} maxPage={Math.ceil(res.length/PageSize)}/>
+      </section>
+    </Main>
+    <Footer />
+  </div>
+</Default>

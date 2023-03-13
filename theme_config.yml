@@ -17,6 +17,7 @@ title:
   delay: 300
 
 posts:
+  paginationSize: 10
   cover: 'https://picbed-1304952903.cos.ap-beijing.myqcloud.com/pic/blog202302091657180.png'
   highlight: dracula
 
@@ -83,4 +84,3 @@ footer:
       - 隐私协议||/privacy
       - Cookie||/cookie
       - 版权协议||/cc
-

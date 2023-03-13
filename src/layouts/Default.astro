@@ -1,23 +1,29 @@
 ---
-import "@sty/index/global.styl"
+import "@sty/index/global.styl";
 import { configs } from "@s/config";
 import InjectHead from "@com/Inject/InjectHead.astro";
 import InjectBody from "@com/Inject/InjectBody.astro";
---- 
+---
 
 <!DOCTYPE html>
 <html lang="zh">
   <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="">
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="https://picbed-1304952903.cos.ap-beijing.myqcloud.com/pic/blog202302030251122.png">
+    <meta charset="UTF-8" />
+    <link rel="icon" href="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://picbed-1304952903.cos.ap-beijing.myqcloud.com/pic/blog202302030251122.png"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/algoliasearch/dist/algoliasearch-lite.umd.js"
+    ></script>
     <title>{configs.title.normal}</title>
-    <InjectHead></InjectHead>
+    <InjectHead />
   </head>
   <body>
     <slot />
-    <InjectBody></InjectBody>
+    <InjectBody />
   </body>
 </html>

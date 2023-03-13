@@ -11,3 +11,4 @@ export function SortCollectArticles<T extends "posts">(List: CollectionEntry<T>[
     );
   });
 }
+

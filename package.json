@@ -15,6 +15,7 @@
 	},
 	"dependencies": {
 		"@astrojs/vue": "^2.0.1",
+		"algoliasearch": "^4.15.0",
 		"astro": "^2.0.18",
 		"js-yaml": "^4.1.0",
 		"remark-directive": "^2.0.1",

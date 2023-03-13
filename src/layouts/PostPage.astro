@@ -1,0 +1,20 @@
+---
+import '@sty/Post/index.styl'
+import Default from "./Default.astro";
+import Header from "@com/Header/index.astro"
+import Footer from "@com/Footer/index.astro";
+import Sidebar from '@com/Sidebar/sidebar.astro'
+--- 
+
+<Default>
+  <div id="body-wrap">
+    <Header />
+    <main id="post-container">
+      <Sidebar />
+      <article class="article">
+        <slot />
+      </article>
+    </main>
+    <Footer />
+  </div>
+</Default>
